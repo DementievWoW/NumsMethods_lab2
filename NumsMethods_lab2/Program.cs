@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Numerics;
 
-const int rows = 4;
-const int cols = rows;
 
-Random random = new Random(Seed: 1);
+Console.WriteLine("Введите размерность матрицы");
+int rows = Convert.ToInt32(Console.ReadLine());
+int cols = rows;
+
+//Random random = new Random(Seed: 1);
+Random random = new Random();
 
 Complex[,] matrix = new Complex[rows, cols];
 
